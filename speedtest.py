@@ -7,9 +7,7 @@ st.set_page_config(
     layout="centered"
 )
 
-
 st.caption("Wanna see why your videos load like they're powered by hope?")
-
 
 if st.button("Test My Internet"):
     with st.spinner("Running your speed test... Please hold."):
@@ -23,7 +21,6 @@ if st.button("Test My Internet"):
     st.write(f"**Upload Speed:** {upload_speed} Mbps")
     st.write(f"**Ping:** {ping} ms")
 
-    
     st.subheader("Your Download Situation:")
     if download_speed < 5:
         st.error("Yo. Your internet so slow, I bet when you click 'Download', even your shadow leaves the room out of embarrassment.")
@@ -34,7 +31,6 @@ if st.button("Test My Internet"):
     else:
         st.success("God DAMN it! Your connection’s flexing harder than a gym bro on pre-workout.")
 
-    
     st.subheader("Your Upload Reality:")
     if upload_speed < 3:
         st.error("Bruh... you tryna upload with that? I’ve seen pigeons deliver data faster.")
@@ -52,7 +48,6 @@ if st.button("Test My Internet"):
         st.warning("That delay you feel in Zoom? That’s your voice arriving after you do.")
     else:
         st.success("Smooth sailing. Your reactions actually show up in real time.")
-
 
 else:
     st.info("Click the button above when you're brave enough to face the truth 😤")
